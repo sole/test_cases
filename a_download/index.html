@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>triggering downloads using the download attribute in anchors</title>
+	</head>
+	<body>
+    
+		<p>The <tt>a</tt> element can have a <tt>download</tt> attribute. This will test where does that work (and where it doesn't).</p>
+
+		<p>
+			<a id="gradientLink" href="gradient.png">Link to a gradient image</a>
+			<button id="btnLinked">trigger downloading the linked resource</button></p>
+			<button id="btnLinkedTimeout">trigger downloading the linked resource after a time out</button>
+		</p>
+
+		<p>
+			<canvas width="100" height="100"></canvas>
+			<button id="btnCanvas">trigger downloading canvas picture</button>
+		</p>
+
+		<script src="main.js"></script>
+		
+	</body>
+</html>
+
