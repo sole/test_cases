@@ -1,0 +1,19 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body > * {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+canvas {
+	border: 1px solid red;
+	display: block;
+}
