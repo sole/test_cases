@@ -19,6 +19,10 @@ body > * {
 	top: 0;
 }
 
+body > div {
+	z-index: 1;
+}
+
 canvas {
 	background-color: #eee;
 	background-size: 20px 20px;
@@ -27,4 +31,5 @@ canvas {
 		linear-gradient(45deg, #ccc 25%, transparent 25%, transparent 75%, #ccc 75%, #ccc),
 		linear-gradient(45deg, #ccc 25%, transparent 25%, transparent 75%, #ccc 75%, #ccc);
 	display: block;
+	z-index: 0;
 }
