@@ -2,9 +2,15 @@
 	box-sizing: border-box;
 }
 
-* {
+*, *:before, *:after {
 	padding: 0;
 	margin: 0;
+}
+
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
 }
 
 body > * {
@@ -14,6 +20,11 @@ body > * {
 }
 
 canvas {
-	border: 1px solid red;
+	background-color: #eee;
+	background-size: 20px 20px;
+	background-position: 0 0, 10px 10px;
+	background-image: 
+		linear-gradient(45deg, #ccc 25%, transparent 25%, transparent 75%, #ccc 75%, #ccc),
+		linear-gradient(45deg, #ccc 25%, transparent 25%, transparent 75%, #ccc 75%, #ccc);
 	display: block;
 }
