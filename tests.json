@@ -1,0 +1,5 @@
+{
+	"tests": [
+		[ "a_download", "Test different ways of triggering downloads from the browser" ]
+	]
+}
