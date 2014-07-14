@@ -2,6 +2,6 @@
 	"tests": [
 		[ "a_download", "Test different ways of triggering downloads from the browser" ],
 		[ "activities_camera_photo", "Triggering the 'record' activity to get a video/photo back to the calling activity" ],
-		[ "devicePixelRatio", "Show how to access / monitor window.devicePixelRatio" ],
+		[ "devicePixelRatio", "Show how to access / monitor window.devicePixelRatio" ]
 	]
 }
