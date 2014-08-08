@@ -3,6 +3,7 @@
 		[ "a_download", "Test different ways of triggering downloads from the browser" ],
 		[ "activities_camera_photo", "Triggering the 'record' activity to get a video/photo back to the calling activity" ],
 		[ "canvas_scaling", "Ensuring canvas remains crispy despite scaling" ],
-		[ "devicePixelRatio", "Show how to access / monitor window.devicePixelRatio" ]
+		[ "devicePixelRatio", "Show how to access / monitor window.devicePixelRatio" ],
+		[ "gradient_transitions", "Can we, or not, have CSS transitions on gradient backgrounds?" ]
 	]
 }
