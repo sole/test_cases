@@ -1,0 +1,18 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	background: linear-gradient(180deg, #fff 0%, #ff0 100%);
+	padding: 1rem;
+	transition: background 10s ease-in;
+}
+
+p:hover {
+	background: linear-gradient(180deg, #fff 0%, #0f0 100%);
+}
