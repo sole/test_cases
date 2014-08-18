@@ -6,11 +6,6 @@
 		<script src="platform.js"></script>
 		<link rel="import" href="megacomponent.html">
 		<style>
-			mega-component {
-				border: 1px solid grey;
-				display: inline-block;
-				padding: 0.5rem;
-			}
 
 			#supercool {
 				color: #e00;
@@ -22,12 +17,12 @@
 				font-style: italic;
 			}
 
-			/* if these styles are applied, the shadow boundary is not being respected */
+			/* if these styles are applied, the shadow boundary is not being respected, which is BAD */
 			mega-component u {
 				background: #fee;
 			}
 
-			/* using proper shadow selectors */
+			/* but using proper shadow selectors we should be able to change things inside the shadow element */
 			mega-component::shadow u {
 				text-decoration: none;
 				border-bottom: 2px dotted #f0f;
@@ -39,20 +34,6 @@
 				font-size: 3rem;
 			}
 		</style>
-		<!--<script>
-			var proto = Object.create(HTMLElement.prototype);
-			var template = document.getElementById('megatemplate');
-			proto.createdCallback = function() {
-				var shadow = this.createShadowRoot();
-				shadow.appendChild(template.cloneNode());
-				//shadow.innerHTML = "I'm a <tt>mega-component</tt> that likes <u>underlining</u>";
-			};
-			document.registerElement('mega-component', {
-				prototype: proto
-			});
-
-		</script>-->
-
 	</head>
 	<body>
 		<h1>Shadow DOM and CSS selectors</h1>

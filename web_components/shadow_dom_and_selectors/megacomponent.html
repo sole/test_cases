@@ -1,19 +1,29 @@
 
 <template id="megatemplate">
+	<style>
+		:host {
+			color: #333;
+			border: 1px solid gray;
+			background: #ddd;
+			display: inline-block;
+			padding: 1rem;
+		}
+	</style>
 	I'm a <tt>mega-component</tt> that likes <u>underlining</u>
 </template>
 
 <script>
 	var currentScript = document._currentScript || document.currentScript; // ???
 	var doc = currentScript.ownerDocument;
-	var proto = Object.create(HTMLElement.prototype);
 	var template = doc.getElementById('megatemplate');
+	var proto = Object.create(HTMLElement.prototype);
+	
 	proto.createdCallback = function() {
 		var shadow = this.createShadowRoot();
 		shadow.appendChild(template.content.cloneNode(true));
 	};
+	
 	document.registerElement('mega-component', {
 		prototype: proto
 	});
-
 </script>
