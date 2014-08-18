@@ -1,0 +1,19 @@
+
+<template id="megatemplate">
+	I'm a <tt>mega-component</tt> that likes <u>underlining</u>
+</template>
+
+<script>
+	var currentScript = document._currentScript || document.currentScript; // ???
+	var doc = currentScript.ownerDocument;
+	var proto = Object.create(HTMLElement.prototype);
+	var template = doc.getElementById('megatemplate');
+	proto.createdCallback = function() {
+		var shadow = this.createShadowRoot();
+		shadow.appendChild(template.content.cloneNode(true));
+	};
+	document.registerElement('mega-component', {
+		prototype: proto
+	});
+
+</script>

@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>Shadow DOM and CSS selectors</title>
 		<script src="platform.js"></script>
+		<link rel="import" href="megacomponent.html">
 		<style>
 			mega-component {
 				border: 1px solid grey;
@@ -38,22 +39,23 @@
 				font-size: 3rem;
 			}
 		</style>
-		<script>
+		<!--<script>
 			var proto = Object.create(HTMLElement.prototype);
+			var template = document.getElementById('megatemplate');
 			proto.createdCallback = function() {
 				var shadow = this.createShadowRoot();
-				shadow.innerHTML = "I'm a <tt>mega-component</tt> that likes <u>underlining</u>";
+				shadow.appendChild(template.cloneNode());
+				//shadow.innerHTML = "I'm a <tt>mega-component</tt> that likes <u>underlining</u>";
 			};
 			document.registerElement('mega-component', {
 				prototype: proto
 			});
 
-		</script>
+		</script>-->
 
 	</head>
 	<body>
 		<h1>Shadow DOM and CSS selectors</h1>
-		<p><em>A test to see which selectors work in which platforms</em></p>
 		<p><mega-component></mega-component> - the underline <strong>should not</strong> have a reddish background, but should have a pink dotted bottom border.</p>
 		<p><mega-component id="supercool"></mega-component> - this instance is even cooler</p>
 	</body>
