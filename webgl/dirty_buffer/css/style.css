@@ -1,0 +1,23 @@
+html { overflow: hidden; }
+body { margin: 0; }
+canvas { width: 100vw; height: 100vh; }
+
+/* --- */
+body {
+	color: #fff;
+	background: #000;
+}
+
+#explanation {
+	position: absolute;
+	z-index: 10;
+}
+
+canvas {
+	z-index: 0;
+}
+
+img {
+	width: 50%;
+	height: auto;
+}
