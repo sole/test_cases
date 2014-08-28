@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf8">
+		<title>there seems to be a gap between the round part of the border and the not round part of the border</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/main.js" defer></script>
+	</head>
+	<body>
+		<h1></h1>
+
+		<p>this one is fine (no gap)<p>
+		<ul>
+			<li>lorem ipsum</li>
+			<li>dolor amet</li>
+		</ul>
+
+		<p>this one has the gap - probably because <tt>border-radius</tt> is expressed in fractions of rem?</p>
+		<ul id="buggy">
+			<li>lorem ipsum</li>
+			<li>dolor amet</li>
+		</ul>
+
+	</body>
+</html>

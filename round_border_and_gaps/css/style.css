@@ -1,0 +1,33 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+p, ul {
+	margin: 2rem 0 1rem 0;
+}
+
+ul {
+	display: flex;
+}
+
+li {
+	display: block;
+	flex: 1;
+	border-bottom: 2rem solid black;
+	border-radius: 1rem;
+	padding: 0.2rem 0.4rem;
+}
+
+#buggy li {
+	border-radius: 1.6rem;
+}
