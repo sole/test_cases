@@ -6,6 +6,7 @@
 		[ "devicePixelRatio", "Show how to access / monitor window.devicePixelRatio" ],
 		[ "gradient_transitions", "Can we, or not, have CSS transitions on gradient backgrounds?" ],
 		[ "round_border_and_gaps", "Why is there a gap in my border?" ],
+		[ "web_audio/mp4_mediasource", "Web Audio: Using an MP4 video as media source" ],
 		[ "web_components/shadow_dom_and_selectors", "Web Components: Shadow DOM and CSS Selectors" ],
 		[ "webgl/dirty_buffer", "WebGL: dirty buffer" ]
 	]
