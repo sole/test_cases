@@ -1,4 +1,4 @@
-# Test cases
+# [Test cases](http://sole.github.io/test_cases/)
 
 This is [sole](http://soledadpenades.com)'s collection of test cases.
 
@@ -7,3 +7,4 @@ Attaching a good test case with your bug report is a godssend for QA and develop
 I'll try to comment them out and make them 'didactic', but you should ping me with any questions you might have. Create an issue so everyone else can benefit from an open discussion!
 
 Thanks, and let's put everything to a test!
+
