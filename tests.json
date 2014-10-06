@@ -4,6 +4,7 @@
 		[ "activities_camera_photo", "Triggering the 'record' activity to get a video/photo back to the calling activity" ],
 		[ "canvas_scaling", "Ensuring canvas remains crispy despite scaling" ],
 		[ "devicePixelRatio", "Show how to access / monitor window.devicePixelRatio" ],
+		[ "file_uploads", "Selecting a file for uploading should not crash the browser" ],
 		[ "gradient_transitions", "Can we, or not, have CSS transitions on gradient backgrounds?" ],
 		[ "round_border_and_gaps", "Why is there a gap in my border?" ],
 		[ "web_audio/mp4_mediasource", "Web Audio: Using an MP4 video as media source" ],
