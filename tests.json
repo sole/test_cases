@@ -7,6 +7,7 @@
 		[ "file_uploads", "Selecting a file for uploading should not crash the browser" ],
 		[ "gradient_transitions", "Can we, or not, have CSS transitions on gradient backgrounds?" ],
 		[ "round_border_and_gaps", "Why is there a gap in my border?" ],
+		[ "smooth_scrolling", "Native smooth scrolling-no jQuery plugins!" ],
 		[ "web_audio/mp4_mediasource", "Web Audio: Using an MP4 video as media source" ],
 		[ "web_audio/bias", "Web Audio: Applying bias to a gain node to generate on-purpose clipping of a sine signal (but it does not seem to work)" ],
 		[ "web_components/shadow_dom_and_selectors", "Web Components: Shadow DOM and CSS Selectors" ],
