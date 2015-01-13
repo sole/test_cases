@@ -12,6 +12,7 @@
 		[ "web_audio/buffersourcenodesgc", "Web Audio: looped buffer source nodes don't seem to be Garbage Collected" ],
 		[ "web_audio/buffersourcenotstereo", "Web Audio: a buffer source with two channels should be played in stereo" ],
 		[ "web_audio/mp4_mediasource", "Web Audio: Using an MP4 video as media source" ],
+		[ "web_components/shadow_dom", "Can I Shadow DOM?" ],
 		[ "web_components/shadow_dom_and_selectors", "Web Components: Shadow DOM and CSS Selectors" ],
 		[ "webgl/dirty_buffer", "WebGL: dirty buffer" ]
 	]

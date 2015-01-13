@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Can I Shadow DOM?</title>
+	</head>
+	<body>
+		<h1>Can I Shadow DOM?</h1>
+		<script>
+			var node = document.createElement('div');
+			node.innerHTML = 'This is the light DOM';
+			document.body.appendChild(node);
+
+			if(!node.createShadowRoot) {
+				alert('Sorry but this browser cannot Shadow DOM');
+			} else {
+				var shadowRoot = node.createShadowRoot();
+				shadowRoot.innerHTML = 'The Shadow DOM has taken over';
+			}
+		</script>
+	</body>
+</html>
+
+
