@@ -19,7 +19,11 @@ var init = function() {
     cancelAnimationFrame(req_id);
   }
 
-  v.src = src;
+  var blob = b64toBlob(src, 'video/mp4');
+  var blobUrl = URL.createObjectURL(blob);
+  v.src = blobUrl;
+
+//  v.src = src;
   v.autoplay = v.loop = true;
   w = c.width = v.clientWidth;
   h = c.height = v.clientHeight;
@@ -63,3 +67,28 @@ c.addEventListener('mousemove', function(e) {
 }, false);
 };
 
+
+function b64toBlob(b64Data, contentType, sliceSize) {
+    contentType = contentType || '';
+    sliceSize = sliceSize || 512;
+
+	var safeData = b64Data.replace('data:' + contentType + ';base64,', '');
+    var byteCharacters = atob(safeData);
+    var byteArrays = [];
+
+    for (var offset = 0; offset < byteCharacters.length; offset += sliceSize) {
+        var slice = byteCharacters.slice(offset, offset + sliceSize);
+
+        var byteNumbers = new Array(slice.length);
+        for (var i = 0; i < slice.length; i++) {
+            byteNumbers[i] = slice.charCodeAt(i);
+        }
+
+        var byteArray = new Uint8Array(byteNumbers);
+
+        byteArrays.push(byteArray);
+    }
+
+    var blob = new Blob(byteArrays, {type: contentType});
+    return blob;
+}
