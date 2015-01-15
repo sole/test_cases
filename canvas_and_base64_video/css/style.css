@@ -1,0 +1,11 @@
+body { text-align: center; }
+
+p {
+  text-align: left;
+  font: 1.5em/2 trebuchet ms, verdana, sans-serif;
+}
+
+.v, .c {
+  display: inline-block;
+  width: 45vw;
+}
