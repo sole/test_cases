@@ -4,6 +4,7 @@
 		[ "activities_camera_photo", "Triggering the 'record' activity to get a video/photo back to the calling activity" ],
 		[ "canvas_and_base64_video", "Can we manipulate the pixels in a base64 encoded video using canvas?" ],
 		[ "canvas_scaling", "Ensuring canvas remains crispy despite scaling" ],
+		[ "css/emoji_shadow", "What happens when you want to have text shadow with emoji text?" ],
 		[ "devicePixelRatio", "Show how to access / monitor window.devicePixelRatio" ],
 		[ "file_uploads", "Selecting a file for uploading should not crash the browser" ],
 		[ "gradient_transitions", "Can we, or not, have CSS transitions on gradient backgrounds?" ],
