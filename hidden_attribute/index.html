@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf8">
+		<title>testing hidden attribute</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/main.js" defer></script>
+	</head>
+	<body>
+		<main>
+			<h1></h1>
+
+			<p>there is a div down here</p>
+			
+			<div hidden>
+				this shouldn't be visible
+			</div>
+			
+			<p>There is a div up here ^^^ but you can't see it because it's hidden. hopefully there won't be any gap in between the two visible paragraphs</p>
+
+			<div style="display: block;" hidden>
+				this div is visible because its <tt>display</tt> CSS property has been set inline
+			</div>
+
+			<div id="shouldbevisible" hidden>
+				this div is visible because its <tt>display</tt> CSS property has been set with a CSS rule for its id selector
+			</div>
+		</main>
+	</body>
+</html>

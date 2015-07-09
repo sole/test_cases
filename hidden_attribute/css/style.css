@@ -1,0 +1,28 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	overflow: scroll;
+}
+
+
+div {
+	border: 1px solid red;
+	padding: 1rem;
+	margin: 1rem;
+}
+
+#shouldbevisible {
+	display: block;
+}
+
+p {
+	background: #ccc;
+}

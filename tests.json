@@ -8,6 +8,7 @@
 		[ "css/emoji_shadow", "What happens when you want to have text shadow with emoji text?" ],
 		[ "devicePixelRatio", "Show how to access / monitor window.devicePixelRatio" ],
 		[ "file_uploads", "Selecting a file for uploading should not crash the browser" ],
+		[ "hidden_attribute", "Checking what is the hidden attribute doing" ],
 		[ "gradient_transitions", "Can we, or not, have CSS transitions on gradient backgrounds?" ],
 		[ "round_border_and_gaps", "Why is there a gap in my border?" ],
 		[ "smooth_scrolling", "Native smooth scrolling-no jQuery plugins!" ],
