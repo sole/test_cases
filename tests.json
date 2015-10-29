@@ -12,6 +12,7 @@
 		[ "gradient_transitions", "Can we, or not, have CSS transitions on gradient backgrounds?" ],
 		[ "round_border_and_gaps", "Why is there a gap in my border?" ],
 		[ "smooth_scrolling", "Native smooth scrolling-no jQuery plugins!" ],
+		[ "videos/from_blob", "Videos: videos played from a blob don't seem to loop?" ],
 		[ "web_audio/bias", "Web Audio: Applying bias to a gain node to generate on-purpose clipping of a sine signal (but it does not seem to work)" ],
 		[ "web_audio/buffersourcenodesgc", "Web Audio: looped buffer source nodes don't seem to be Garbage Collected" ],
 		[ "web_audio/buffersourcenotstereo", "Web Audio: a buffer source with two channels should be played in stereo" ],
