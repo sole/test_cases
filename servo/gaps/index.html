@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>strange gaps</title>
+	</head>
+	<body>
+		<p>there should be no gaps between each row of checkers</p>
+		<div id="checkers"></div>
+		<style>
+			#checkers > div {
+				background: #000;
+				display: inline-block;
+				width: 10vw;
+				height: 10vw;
+				transition: all 0.5s ease-in-out;
+			}
+			
+			#checkers div:nth-child(odd) {
+				background: #f00;
+			}
+		</style>
+
+		<script>
+			window.onload = function() {
+
+				var checkers = document.getElementById('checkers');
+				for(var i = 0; i < 36; i++) {
+					var el = document.createElement('div');
+					checkers.appendChild(el);
+				}
+
+			};
+		</script>
+	</body>
+</html>
+
