@@ -20,6 +20,7 @@
 		[ "web_audio/buffersourcenodesgc", "Web Audio: looped buffer source nodes don't seem to be Garbage Collected" ],
 		[ "web_audio/buffersourcenotstereo", "Web Audio: a buffer source with two channels should be played in stereo" ],
 		[ "web_audio/mp4_mediasource", "Web Audio: Using an MP4 video as media source" ],
+		[ "web_audio/settimeout", "Web Audio: Test if scheduling audio via setTimeout results in smooth audio when the tab is in background" ],
 		[ "web_audio/thx_cutting_out", "Web Audio: Playing THX sound" ],
 		[ "web_components/shadow_dom", "Can I Shadow DOM?" ],
 		[ "web_components/shadow_dom_and_selectors", "Web Components: Shadow DOM and CSS Selectors" ],
