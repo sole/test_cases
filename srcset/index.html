@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf8">
+		<title>Wrong inline block width?</title>
+	</head>
+	<body>
+
+		<h1>Wrong inline block width?</h1>
+
+		<p>Despite being set to <tt>display: inline block</tt>, the following div is wider than the images it contains. Perhaps it's using the original image sizes instead of the density adjusted size? The images use <tt>srcset</tt> to load higher DPI versions.</p>
+		
+		<div class="images">
+			<img src="dev-edition-1.png" srcset="dev-edition-1@4x.png 4x" alt="dev edition logo" /><img src="dev-edition-2.png" alt="dev edition logo" srcset="dev-edition-2@4x.png 4x" />
+		</div>
+
+		<p>Same images and div markup, except not using srcset</p>
+
+		<div class="images">
+			<img src="dev-edition-1.png" alt="dev edition logo" /><img src="dev-edition-2.png" alt="dev edition logo" />
+		</div>
+
+
+		<style>
+			.images {
+				background: #f00;
+				display: inline-block;
+			}
+			
+			.images > * {
+				background: #151d4a;
+			}
+		</style>
+	</body>
+</html>

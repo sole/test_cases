@@ -13,6 +13,7 @@
 		[ "gradient_transitions", "Can we, or not, have CSS transitions on gradient backgrounds?" ],
 		[ "round_border_and_gaps", "Why is there a gap in my border?" ],
 		[ "smooth_scrolling", "Native smooth scrolling-no jQuery plugins!" ],
+		[ "srcset", "Width of inline block containing images with srcset attribute is wrong" ],
 		[ "servo/gaps", "Servo: Investigating strange gaps between display: inline-block rows" ],
 		[ "tab_and_emoji", "Page titles with emoji might get wrongly ellipsised" ],
 		[ "videos/from_blob", "Videos: videos played from a blob don't seem to loop?" ],
