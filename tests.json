@@ -2,6 +2,7 @@
 	"tests": [
 		[ "a_download", "Test different ways of triggering downloads from the browser" ],
 		[ "activities_camera_photo", "Triggering the 'record' activity to get a video/photo back to the calling activity" ],
+		[ "async_await", "Testing ES2016's async and await features" ],
 		[ "canvas_and_base64_video", "Can we manipulate the pixels in a base64 encoded video using canvas?" ],
 		[ "canvas_scaling", "Ensuring canvas remains crispy despite scaling" ],
 		[ "canvas/gradients", "Canvas and gradients... slow?" ],
