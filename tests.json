@@ -19,7 +19,7 @@
 		[ "tab_and_emoji", "Page titles with emoji might get wrongly ellipsised" ],
 		[ "videos/from_blob", "Videos: videos played from a blob don't seem to loop?" ],
 		[ "videos/max_length", "Videos: hitting maximum MediaRecorder video length?" ],
-		[ "videos/media_recorder_playback_rate", "Videos: Recording video with playbackRate != 1 should generate video with different duration" ],
+		[ "videos/media_recorder_playback_rate", "Videos: Recording video with playbackRate = 0.5 should generate video with double duration" ],
 		[ "web_audio/bias", "Web Audio: Applying bias to a gain node to generate on-purpose clipping of a sine signal (but it does not seem to work)" ],
 		[ "web_audio/buffersourcenodesgc", "Web Audio: looped buffer source nodes don't seem to be Garbage Collected" ],
 		[ "web_audio/buffersourcenotstereo", "Web Audio: a buffer source with two channels should be played in stereo" ],

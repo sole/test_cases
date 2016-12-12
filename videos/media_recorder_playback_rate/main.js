@@ -4,7 +4,9 @@ window.onload = function() {
 
 	video.src = '../../assets/sintel.webm';
 	video.playbackRate = 0.5;
-	console.log('initial video duration', video.duration);
+	video.addEventListener('loadedmetadata', function(e) {
+		console.log('initial video duration', video.duration);
+	});
 
 	const videoStream = video.mozCaptureStream();
 	const recorder = new MediaRecorder(videoStream);
@@ -14,15 +16,19 @@ window.onload = function() {
 		video2.src = URL.createObjectURL(e.data);
 		video2.controls = true;
 		document.body.appendChild(video2);
+
+		video2.addEventListener('loadedmetadata', function(e) {
+			console.log('*new* video duration', video2.duration);
+		});
+
 		video2.play();
-		console.log('new video duration', video2.duration);
 	});
 
 	video.addEventListener('ended', function(e) {
 		console.log('ended video');
 	});
 
-	video.play();
 	recorder.start();
+	video.play();
 
 };
