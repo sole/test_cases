@@ -9,6 +9,7 @@
 		[ "css/emoji_shadow", "What happens when you want to have text shadow with emoji text?" ],
 		[ "css/range-thumb-pointer", "Custom range thumb pointer not applied if background not set" ],
 		[ "devicePixelRatio", "Show how to access / monitor window.devicePixelRatio" ],
+		[ "devtools/long-attribute-values", "Long values for attributes should be copied unaltered" ],
 		[ "file_uploads", "Selecting a file for uploading should not crash the browser" ],
 		[ "hidden_attribute", "Checking what is the hidden attribute doing" ],
 		[ "gradient_transitions", "Can we, or not, have CSS transitions on gradient backgrounds?" ],
